@@ -110,17 +110,14 @@ public class CaptureListener implements Listener {
   }
 
   private boolean hasEntityKey(ItemMeta itemMeta) {
-    final PersistentDataContainer container = itemMeta.getPersistentDataContainer();
-    return container.has(new NamespacedKey(capture, "entity-key"), PersistentDataType.STRING);
+    return itemMeta.getPersistentDataContainer().has(new NamespacedKey(capture, "entity-key"), PersistentDataType.STRING);
   }
 
   private String getEntityKey(ItemMeta itemMeta) {
-    final PersistentDataContainer container = itemMeta.getPersistentDataContainer();
-    return container.get(new NamespacedKey(capture, "entity-key"), PersistentDataType.STRING);
+    return itemMeta.getPersistentDataContainer().get(new NamespacedKey(capture, "entity-key"), PersistentDataType.STRING);
   }
 
   private EntityType getEntityType(ItemMeta itemMeta) {
-    final PersistentDataContainer container = itemMeta.getPersistentDataContainer();
-    return EntityType.valueOf(container.get(new NamespacedKey(capture, "entity-type"), PersistentDataType.STRING));
+    return EntityType.valueOf(itemMeta.getPersistentDataContainer().get(new NamespacedKey(capture, "entity-type"), PersistentDataType.STRING));
   }
 }
