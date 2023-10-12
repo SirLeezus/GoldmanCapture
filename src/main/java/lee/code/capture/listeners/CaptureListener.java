@@ -81,7 +81,7 @@ public class CaptureListener implements Listener {
   }
 
   private void spawnEffect(Location location, World world) {
-    world.playSound(location, Sound.ENTITY_ENDERMAN_TELEPORT, (float) 0.5, (float) 0.5);
+    world.playSound(location, Sound.ENTITY_ENDERMAN_TELEPORT, (float) 0.5, (float) 1);
     world.playEffect(location, Effect.ENDER_SIGNAL, 0);
   }
 
