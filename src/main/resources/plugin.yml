@@ -1,0 +1,6 @@
+name: $name
+version: $version
+main: lee.code.capture.Capture
+description: $description
+author: Lee
+api-version: "$apiVersion"
