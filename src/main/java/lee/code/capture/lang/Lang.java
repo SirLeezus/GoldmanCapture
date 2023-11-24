@@ -26,6 +26,7 @@ public enum Lang {
   MOB_DATA_OFF_HAND("&e&lOff Hand&7: &a{0}"),
   MOB_DATA_VILLAGER_PROFESSION("&e&lVillager Profession&7: &a{0}"),
   MOB_DATA_VILLAGER_TYPE("&e&lVillager Type&7: &a{0}"),
+  MOB_DATA_VILLAGER_LEVEL("&e&lVillager Level&7: &a{0}"),
   MOB_DATA_FISH_BODY_COLOR("&e&lFish Body Color&7: &a{0}"),
   MOB_DATA_FISH_PATTERN("&e&lFish Pattern&7: &a{0}"),
   MOB_DATA_FISH_PATTERN_COLOR("&e&lFish Pattern Color&7: &a{0}"),

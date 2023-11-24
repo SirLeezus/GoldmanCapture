@@ -89,6 +89,7 @@ public class WandLoreBuilder {
     if (entity instanceof Villager villager) {
       line.append(Lang.MOB_DATA_VILLAGER_PROFESSION.getString(new String[]{CoreUtil.capitalize(villager.getProfession().name())}));
       line.append("\n").append(Lang.MOB_DATA_VILLAGER_TYPE.getString(new String[]{CoreUtil.capitalize(villager.getVillagerType().name())}));
+      line.append("\n").append(Lang.MOB_DATA_VILLAGER_LEVEL.getString(new String[]{String.valueOf(villager.getVillagerLevel())}));
     }
     return line.isEmpty() ? line.toString() : line + "\n";
   }
