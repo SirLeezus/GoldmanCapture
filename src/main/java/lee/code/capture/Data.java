@@ -1,7 +1,6 @@
 package lee.code.capture;
 
 import lee.code.capture.enums.SupportedEntity;
-import lee.code.capture.listeners.CaptureListener;
 import lombok.Getter;
 import org.bukkit.entity.EntityType;
 
